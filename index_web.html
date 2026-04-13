@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9f9f9",
+                    "secondary-container": "#e2dfe0",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "background": "#f9f9f9",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5f",
+                    "outline-variant": "#ebbbb4",
+                    "on-tertiary-fixed": "#001a40",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f1f1f1",
+                    "tertiary": "#0059ba",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary-fixed-variant": "#474647",
+                    "on-background": "#1a1c1c",
+                    "on-surface": "#1a1c1c",
+                    "secondary-fixed-dim": "#c8c6c7",
+                    "primary": "#b6171e",
+                    "inverse-primary": "#ffb3ac",
+                    "on-primary-container": "#fffbff",
+                    "on-tertiary-fixed-variant": "#004491",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#fefcff",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-fixed": "#d7e2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#1b1b1c",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e2e2e2",
+                    "on-surface-variant": "#603e39",
+                    "surface-container": "#eeeeee",
+                    "secondary-fixed": "#e5e2e3",
+                    "primary-fixed": "#ffdad6",
+                    "primary-container": "#da3433",
+                    "tertiary-container": "#0071e8",
+                    "surface-dim": "#dadada",
+                    "surface-tint": "#ba1a20",
+                    "on-primary-fixed": "#410003",
+                    "tertiary-fixed-dim": "#acc7ff",
+                    "on-secondary-container": "#636263",
+                    "on-primary-fixed-variant": "#930010",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-surface": "#2f3131",
+                    "outline": "#956d67",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar from JSON -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-headline" style="">Jhair Lescano</span>
+<div class="hidden md:flex gap-6 items-center">
+<span class="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 hover:text-red-600 transition-colors duration-200 cursor-pointer" style="">Portfolio</span>
+<span class="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 hover:text-red-600 transition-colors duration-200 cursor-pointer" style="">Services</span>
+<span class="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 hover:text-red-600 transition-colors duration-200 cursor-pointer" style="">Process</span>
+<span class="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 hover:text-red-600 transition-colors duration-200 cursor-pointer" style="">About</span>
+</div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
+<span class="text-sm font-extrabold tracking-widest text-on-surface uppercase flex items-center gap-2" style="">
+                    WEB <span class="text-primary" style="">&amp;</span> PWAs
+                </span>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-container transition-all active:scale-95 duration-150 ease-in-out shadow-sm" style="">&lt;- Back to Hub</button>
+</div>
+</nav>
+<main class="pt-32 max-w-7xl mx-auto px-6">
+<!-- Hero / Resumen Section -->
+<section class="mb-32">
+<div class="editorial-grid">
+<div class="col-span-12 lg:col-span-8">
+<span class="inline-block px-3 py-1 mb-6 text-[10px] font-bold tracking-[0.2em] text-primary uppercase border-l-2 border-primary" style="">Specialty: Engineering Architecture</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-12" style="">
+                        Transformo ideas en aplicaciones instalables <span class="text-primary" style="">(PWA)</span> con React/Python.
+                    </h1>
+</div>
+<div class="col-span-12 lg:col-start-7 lg:col-span-6">
+<p class="text-lg md:text-xl text-secondary leading-relaxed font-medium" style="">
+                        Soluciones que impulsan la conversión y mejoran la experiencia del usuario, sin fricción. Mi enfoque combina la robustez técnica con una estética editorial de alto nivel.
+                    </p>
+<div class="mt-8 flex gap-4">
+<div class="flex items-center gap-2 text-sm font-semibold">
+<span class="material-symbols-outlined text-primary" data-icon="terminal" style="">terminal</span>
+<span class="" style="">Full-stack Precision</span>
+</div>
+<div class="flex items-center gap-2 text-sm font-semibold">
+<span class="material-symbols-outlined text-primary" data-icon="bolt" style="">bolt</span>
+<span class="" style="">Zero Friction PWA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Gallery -->
+<section class="space-y-48">
+<!-- Featured Project: Dome Scoop -->
+<div class="editorial-grid items-center">
+<div class="col-span-12 lg:col-span-7 relative group">
+<div class="absolute -inset-4 bg-surface-container-low rounded-xl -z-10 transition-transform group-hover:scale-[1.02]"></div>
+<div class="aspect-[16/10] bg-surface-container-high rounded-lg overflow-hidden shadow-2xl">
+<img alt="Dome Scoop Mobile UI" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" data-alt="high-end minimalist mobile e-commerce UI design for artisanal ice cream, clean white interface with vibrant red accents and professional photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6jA8wGbrs414a_X5MPe2cpFBak3edGL6XFQ1RnDjNpQJM_72oLDk0ZnkZMPCFTg_rshNipl8oFoc4qdTfE7qjfq1k5YBgCcp1zgAhs3M4cBieTeQkTxaOBcgv0pJqA0_bbs3pE8P-PxOGJfVxnFjKVpWlqKv07l5x-3OPttff8XMdQoFB2jTDCGeGciyF5-gnsSeIqgyqSnnq-rNcFbAasCoMF7iFAfBx2H3mjcuvEvFzjxbtVGqOCBQaLXcoDUILVn4rHYpdaoY" style=""/>
+</div>
+<!-- Floating Technical Badge -->
+<div class="absolute bottom-8 -right-8 glass-card p-6 rounded-lg shadow-xl hidden md:block max-w-[240px]">
+<span class="block text-[10px] font-bold text-primary tracking-widest uppercase mb-2" style="">Technical Core</span>
+<p class="text-xs text-on-surface leading-snug" style="">Service Workers optimizados para funcionamiento offline y sincronización en segundo plano mediante Python FastAPI.</p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 lg:pl-12">
+<div class="mb-4 flex gap-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase" style="">PWA Funcional</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase" style="">E-commerce</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase" style="">React</span>
+</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-6 tracking-tight" style="">Dome Scoop</h2>
+<p class="text-secondary mb-8 leading-relaxed" style="">
+                        Rediseño y desarrollo de la plataforma transaccional móvil. Implementación de una arquitectura "App-Shell" que reduce los tiempos de carga en un 60% y permite la instalación directa en el dispositivo sin pasar por App Stores.
+                    </p>
+<a class="inline-flex items-center gap-3 text-on-surface font-bold group" href="#" style="">
+<span class="border-b-2 border-primary pb-1 group-hover:pr-4 transition-all duration-300" style="">Explorar Proyecto</span>
+<span class="material-symbols-outlined text-primary" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Second Project: Ovalo Futuro -->
+<div class="editorial-grid items-center">
+<div class="col-span-12 lg:col-span-5 order-2 lg:order-1 lg:pr-12">
+<div class="mb-4 flex gap-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase" style="">EdTech</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase" style="">LMS</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase" style="">Python</span>
+</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-6 tracking-tight" style="">Ovalo Futuro</h2>
+<p class="text-secondary mb-8 leading-relaxed" style="">
+                        Plataforma educativa diseñada bajo principios de arquitectura limpia. Se priorizó la jerarquía visual para facilitar el aprendizaje asíncrono, integrando módulos de evaluación en tiempo real y dashboards de progreso técnico.
+                    </p>
+<a class="inline-flex items-center gap-3 text-on-surface font-bold group" href="#" style="">
+<span class="border-b-2 border-primary pb-1 group-hover:pr-4 transition-all duration-300" style="">Ver Caso de Estudio</span>
+<span class="material-symbols-outlined text-primary" style="">arrow_forward</span>
+</a>
+</div>
+<div class="col-span-12 lg:col-span-7 order-1 lg:order-2 relative group">
+<div class="absolute -inset-4 bg-surface-container rounded-xl -z-10 transition-transform group-hover:scale-[1.02]"></div>
+<div class="aspect-[16/10] bg-surface-container-high rounded-lg overflow-hidden shadow-2xl">
+<img alt="Ovalo Futuro Dashboard" class="w-full h-full object-cover grayscale-[0.5] hover:grayscale-0 transition-all duration-700" data-alt="sophisticated education platform dashboard interface, dark mode aesthetic with clean typography and technical data visualization charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVyEbgHx6_ayiFkWqkW_vh9vyxazKCqrZ-WpNNo6tIuhaNGl6GWIIYWUCO33x7KJwjIihCLkGeNptC5z5suPvC63wdJSv1NphK3FCamHkMirPMPKHl2Svtu4jZIXDH3roHpLGfQqWuIR9aobPmXQPCQX54OHIqX2DuBUWqa5R3cpcIo58hc5UNsP1duYzHhM3vmOF7gGv-LqGtvCoqiaAzb1xJmFty2xBwuOVORMNp3NaUIW1m_-Ox5qhlNWZAKuUG1BiTQKrjc-U" style=""/>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action / Technical Grid -->
+<section class="mt-48 py-24 bg-on-surface text-surface rounded-xl px-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full stroke-current" viewbox="0 0 100 100">
+<path d="M0,50 L100,50 M50,0 L50,100" fill="none" stroke-width="0.1"></path>
+<circle cx="50" cy="50" fill="none" r="40" stroke-width="0.05"></circle>
+</svg>
+</div>
+<div class="max-w-3xl">
+<h3 class="text-3xl font-headline font-bold mb-6" style="">¿Listo para escalar tu infraestructura digital?</h3>
+<p class="text-surface-variant text-lg mb-10" style="">Construyo puentes entre la ingeniería compleja y la experiencia de usuario intuitiva. Hablemos sobre tu próximo proyecto.</p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-container transition-all" style="">Iniciar Consultoría</button>
+<button class="border border-surface/20 text-surface px-8 py-4 rounded-lg font-bold hover:bg-surface/10 transition-all" style="">Ver Más Servicios</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer from JSON -->
+<footer class="w-full mt-24 bg-zinc-900 dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-lg font-black text-white font-headline" style="">Jhair Lescano</span>
+<p class="text-zinc-400 text-sm mt-2" style="">© 2024 Jhair Lescano. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 items-center">
+<a class="text-zinc-400 hover:text-red-500 transition-all text-sm font-medium" href="#" style="">LinkedIn</a>
+<a class="text-zinc-400 hover:text-red-500 transition-all text-sm font-medium" href="#" style="">GitHub</a>
+<a class="text-zinc-400 hover:text-red-500 transition-all text-sm font-medium" href="#" style="">Dribbble</a>
+<div class="h-4 w-px bg-zinc-700 hidden md:block"></div>
+<a class="text-white underline font-bold transition-all text-sm" href="#" style="">Back to Hub</a>
+</div>
+</div>
+</footer>
+</body></html>
