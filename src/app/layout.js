@@ -24,12 +24,26 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "JHAIR LESCANO | Ingeniería de Software para Negocios",
-  description:
-    "Portafolio profesional de Jhair Lescano — HomeTech. Soluciones integrales de ingeniería: Data Engineering, Web & PWAs, e Infraestructura.",
+  title: "Jhair Lescano | Ingeniería de Software para Negocios",
+  description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
   manifest: "/manifest.json",
   themeColor: "#B6171E",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  openGraph: {
+    title: "Jhair Lescano | Ingeniería de Software para Negocios",
+    description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
+    siteName: "HomeTech Engineering",
+    images: [
+      {
+        url: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYr0TR_0gJFMQPONuJzxD6YyHp5UzYymBMnQJ1YkPbkOlH6EePMjW_0SsOLLtM1hqgxo2J4CcUBl0tKATK1yg-lJfj_K2j4nc7a-HZ1jXNHeYCXIZszujvxl2x4D8mDmvpVCjbk_oCtnUacF2JVUt9lFbhjJ5vNGuzitrgM2Y1KD5WiJptDSSVEf41udvv53-T4fOd4pzhjbKQwptKop2BWsZS1J0cOr8HlpOE8rkvprI4ViACyZ91Wj85eiI-5gG-pA07ErcpL7I", // Foto de perfil usada en el App
+        width: 500,
+        height: 625,
+        alt: "Jhair Lescano - Software Engineer HomeTech",
+      },
+    ],
+    locale: "es_PE",
+    type: "website",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
