@@ -3,14 +3,14 @@
     {
       "id": "enterprise-db-optimization",
       "categoria": "Data Engineering",
-      "titulo": "Enterprise Database Optimization",
+      "titulo": "Optimización de Base de Datos Empresarial",
       "descripcion": "Arquitectura de sistemas de alta disponibilidad con tunning especializado de SQL Server para escalabilidad logística. Migración a Oracle Cloud Infrastructure (OCI) con optimización quirúrgica de queries.",
-      "descripcionCorta": "Architecting high-availability systems with focused SQL Server tuning for logistics scalability.",
-      "desafio": "Legacy architecture causing latency in mission-critical logistics operations during peak hours.",
-      "solucion": "Migration to Oracle Cloud Infrastructure (OCI) paired with surgical SQL Server query optimization.",
+      "descripcionCorta": "Sistemas de alta disponibilidad con tunning de SQL Server para escalabilidad en el sector logístico.",
+      "desafio": "Arquitectura legacy generando latencia en operaciones logísticas de misión crítica durante horas pico.",
+      "solucion": "Migración a Oracle Cloud Infrastructure (OCI) con optimización quirúrgica de queries en SQL Server.",
       "metricas": {
-        "metricaPrincipal": "40% Faster Processing",
-        "etiqueta": "Efficiency Gain",
+        "metricaPrincipal": "40% más rápido en procesamiento",
+        "etiqueta": "Ganancia en Rendimiento",
         "valor": 40,
         "unidad": "%"
       },
@@ -25,12 +25,12 @@
       "categoria": "Data Engineering",
       "titulo": "Pipeline Oracle Cloud",
       "descripcion": "Diseño y orquestación de pipelines ETL automatizados dentro de Oracle Cloud Infrastructure para optimizar la ingesta y procesamiento de datos. Orquestación serverless usando OCI Data Integration y Functions para procesamiento de datos escalable y basado en eventos.",
-      "descripcionCorta": "Automated ETL pipeline design and orchestration within Oracle Cloud Infrastructure to streamline data ingestion and processing.",
-      "desafio": "Streamlining complex data ingestion workflows to reduce latency and manual intervention in enterprise data lakes.",
-      "solucion": "Serverless orchestration using OCI Data Integration and Functions for highly scalable, event-driven data processing.",
+      "descripcionCorta": "Diseño y orquestación de pipelines ETL automatizados en Oracle Cloud Infrastructure.",
+      "desafio": "Simplificar flujos complejos de ingesta de datos para reducir latencia e intervención manual en Data Lakes empresariales.",
+      "solucion": "Orquestación serverless con OCI Data Integration y Functions para procesamiento escalable y basado en eventos.",
       "metricas": {
-        "metricaPrincipal": "50% Reduction in Processing Time",
-        "etiqueta": "Processing Time Reduction",
+        "metricaPrincipal": "50% reducción en tiempo de procesamiento",
+        "etiqueta": "Reducción de Tiempo",
         "valor": 50,
         "unidad": "%"
       },
@@ -43,14 +43,14 @@
     {
       "id": "realtime-monitoring-dashboard",
       "categoria": "Data Engineering",
-      "titulo": "Real-time Monitoring Dashboard",
+      "titulo": "Dashboard de Monitoreo en Tiempo Real",
       "descripcion": "Solución de monitoreo de alto rendimiento construida con Python/Flask, proporcionando visibilidad instantánea sobre la salud de los pipelines de datos y el consumo de recursos.",
-      "descripcionCorta": "A high-performance monitoring solution built on Python/Flask, providing instant visibility into data pipeline health and resource consumption.",
+      "descripcionCorta": "Monitoreo de alto rendimiento con Python/Flask para visibilidad en tiempo real de Data Pipelines.",
       "desafio": "Falta de visibilidad en tiempo real sobre la salud y el rendimiento de los pipelines de datos en producción.",
-      "solucion": "Dashboard de monitoreo en tiempo real con arquitectura backend robusta para captura y visualización de métricas.",
+      "solucion": "Dashboard de monitoreo en tiempo real con arquitectura Backend robusta para captura y visualización de métricas.",
       "metricas": {
-        "metricaPrincipal": "Real-time Visibility",
-        "etiqueta": "Pipeline Health Monitoring",
+        "metricaPrincipal": "Visibilidad en Tiempo Real",
+        "etiqueta": "Monitoreo de Pipelines",
         "valor": null,
         "unidad": null
       },
@@ -64,13 +64,13 @@
       "id": "dome-scoop",
       "categoria": "Web & PWAs",
       "titulo": "Dome Scoop",
-      "descripcion": "Rediseño y desarrollo de la plataforma transaccional móvil. Implementación de una arquitectura 'App-Shell' que reduce los tiempos de carga en un 60% y permite la instalación directa en el dispositivo sin pasar por App Stores. Service Workers optimizados para funcionamiento offline y sincronización en segundo plano mediante Python FastAPI.",
+      "descripcion": "Rediseño y desarrollo de la plataforma transaccional móvil. Implementación de una arquitectura App-Shell que reduce los tiempos de carga en un 60% y permite la instalación directa en el dispositivo sin pasar por App Stores. Service Workers optimizados para funcionamiento offline y sincronización en segundo plano mediante Python FastAPI.",
       "descripcionCorta": "Plataforma transaccional móvil con arquitectura App-Shell y Service Workers optimizados.",
       "desafio": "Crear una experiencia de e-commerce móvil que funcione offline y se instale directamente sin App Stores.",
       "solucion": "Arquitectura App-Shell con Service Workers optimizados y sincronización en segundo plano vía Python FastAPI.",
       "metricas": {
-        "metricaPrincipal": "60% Reducción en Tiempos de Carga",
-        "etiqueta": "Load Time Reduction",
+        "metricaPrincipal": "60% reducción en tiempos de carga",
+        "etiqueta": "Reducción de Carga",
         "valor": 60,
         "unidad": "%"
       },
@@ -86,11 +86,11 @@
       "titulo": "Ovalo Futuro",
       "descripcion": "Plataforma educativa diseñada bajo principios de arquitectura limpia. Se priorizó la jerarquía visual para facilitar el aprendizaje asíncrono, integrando módulos de evaluación en tiempo real y dashboards de progreso técnico.",
       "descripcionCorta": "Plataforma educativa con arquitectura limpia, evaluación en tiempo real y dashboards de progreso.",
-      "desafio": "Diseñar una plataforma LMS que facilite el aprendizaje asíncrono con una jerarquía visual clara y evaluaciones en tiempo real.",
+      "desafio": "Diseñar una plataforma LMS que facilite el aprendizaje asíncrono con jerarquía visual clara y evaluaciones en tiempo real.",
       "solucion": "Arquitectura limpia con módulos de evaluación integrados y dashboards de progreso técnico para seguimiento del aprendizaje.",
       "metricas": {
         "metricaPrincipal": "Arquitectura Limpia",
-        "etiqueta": "Clean Architecture",
+        "etiqueta": "Escalabilidad Modular",
         "valor": null,
         "unidad": null
       },
@@ -110,7 +110,7 @@
       "solucion": "Configuración especializada de Fortinet con gestión robusta de redes y protocolos de seguridad para entornos industriales.",
       "metricas": {
         "metricaPrincipal": "Alta Disponibilidad",
-        "etiqueta": "High Availability",
+        "etiqueta": "Disponibilidad del Sistema",
         "valor": 99.9,
         "unidad": "%"
       },
@@ -130,7 +130,7 @@
       "solucion": "Implementación de servidores con arquitecturas duales, protocolos de recuperación ante desastres y soporte de nivel avanzado.",
       "metricas": {
         "metricaPrincipal": "Disponibilidad 99.9%",
-        "etiqueta": "System Uptime",
+        "etiqueta": "Disponibilidad de Sistema",
         "valor": 99.9,
         "unidad": "%"
       },
@@ -143,14 +143,14 @@
     {
       "id": "hardware-peripherals",
       "categoria": "Infraestructura",
-      "titulo": "Hardware & Peripherals",
+      "titulo": "Hardware y Periféricos",
       "descripcion": "Diagnóstico y reparación avanzada de equipos de cómputo industriales. Expertise en hardware de misión crítica para entornos mineros e industriales.",
       "descripcionCorta": "Diagnóstico y reparación avanzada de equipos de cómputo industriales.",
       "desafio": "Mantener operativos equipos de cómputo en entornos industriales exigentes con mínimo tiempo de inactividad.",
       "solucion": "Protocolo de diagnóstico avanzado y reparación especializada para hardware industrial de misión crítica.",
       "metricas": {
-        "metricaPrincipal": "Soporte Nivel 2 & 3",
-        "etiqueta": "Support Level",
+        "metricaPrincipal": "Soporte Nivel 2 y 3",
+        "etiqueta": "Nivel de Soporte",
         "valor": null,
         "unidad": null
       },
@@ -187,7 +187,7 @@
   "meta": {
     "autor": "Jhair Lescano",
     "marca": "HomeTech",
-    "rol": "System Architect // Full-Stack Developer",
+    "rol": "Arquitecto de Sistemas // Full-Stack Developer",
     "titular": "Ingeniería de Software para Negocios",
     "subtitulo": "Construyo soluciones integrales desde el dato hasta la experiencia del usuario, con rigor técnico y enfoque de negocio.",
     "totalProyectos": 42,

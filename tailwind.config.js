@@ -114,9 +114,9 @@ module.exports = {
       // 🔤 Tipografía — Sans-serif moderna
       // ============================================
       fontFamily: {
-        headline: ["Plus Jakarta Sans", "sans-serif"],
-        body: ["Inter", "sans-serif"],
-        label: ["Space Grotesk", "sans-serif"],
+        headline: ["var(--font-plus-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        body: ["var(--font-inter)", "Inter", "sans-serif"],
+        label: ["var(--font-space-grotesk)", "Space Grotesk", "sans-serif"],
       },
 
       // ============================================
