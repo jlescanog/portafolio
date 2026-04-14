@@ -1,5 +1,6 @@
 import { Inter, Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import PWARegistration from "@/components/PWARegistration";
 
 // Tipografías configuradas según guidelines.md
 const inter = Inter({
@@ -26,6 +27,14 @@ export const metadata = {
   title: "JHAIR LESCANO | Ingeniería de Software para Negocios",
   description:
     "Portafolio profesional de Jhair Lescano — HomeTech. Soluciones integrales de ingeniería: Data Engineering, Web & PWAs, e Infraestructura.",
+  manifest: "/manifest.json",
+  themeColor: "#B6171E",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "HomeTech",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -60,6 +69,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="font-body bg-surface text-on-surface dark:bg-dark-bg dark:text-surface antialiased transition-colors duration-300">
+        <PWARegistration />
         {children}
       </body>
     </html>
