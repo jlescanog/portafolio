@@ -1,0 +1,197 @@
+{
+  "proyectos": [
+    {
+      "id": "enterprise-db-optimization",
+      "categoria": "Data Engineering",
+      "titulo": "Enterprise Database Optimization",
+      "descripcion": "Arquitectura de sistemas de alta disponibilidad con tunning especializado de SQL Server para escalabilidad logística. Migración a Oracle Cloud Infrastructure (OCI) con optimización quirúrgica de queries.",
+      "descripcionCorta": "Architecting high-availability systems with focused SQL Server tuning for logistics scalability.",
+      "desafio": "Legacy architecture causing latency in mission-critical logistics operations during peak hours.",
+      "solucion": "Migration to Oracle Cloud Infrastructure (OCI) paired with surgical SQL Server query optimization.",
+      "metricas": {
+        "metricaPrincipal": "40% Faster Processing",
+        "etiqueta": "Efficiency Gain",
+        "valor": 40,
+        "unidad": "%"
+      },
+      "tecnologias": ["Oracle", "SQL Server", "OCI", "Python"],
+      "etiquetas": ["ENTERPRISE", "OCI MIGRATION"],
+      "destacado": true,
+      "periodo": "2023—2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "pipeline-oracle-cloud",
+      "categoria": "Data Engineering",
+      "titulo": "Pipeline Oracle Cloud",
+      "descripcion": "Diseño y orquestación de pipelines ETL automatizados dentro de Oracle Cloud Infrastructure para optimizar la ingesta y procesamiento de datos. Orquestación serverless usando OCI Data Integration y Functions para procesamiento de datos escalable y basado en eventos.",
+      "descripcionCorta": "Automated ETL pipeline design and orchestration within Oracle Cloud Infrastructure to streamline data ingestion and processing.",
+      "desafio": "Streamlining complex data ingestion workflows to reduce latency and manual intervention in enterprise data lakes.",
+      "solucion": "Serverless orchestration using OCI Data Integration and Functions for highly scalable, event-driven data processing.",
+      "metricas": {
+        "metricaPrincipal": "50% Reduction in Processing Time",
+        "etiqueta": "Processing Time Reduction",
+        "valor": 50,
+        "unidad": "%"
+      },
+      "tecnologias": ["OCI", "ETL", "Oracle", "Data Integration", "Functions"],
+      "etiquetas": ["OCI", "ETL", "ORACLE"],
+      "destacado": true,
+      "periodo": "2023—2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "realtime-monitoring-dashboard",
+      "categoria": "Data Engineering",
+      "titulo": "Real-time Monitoring Dashboard",
+      "descripcion": "Solución de monitoreo de alto rendimiento construida con Python/Flask, proporcionando visibilidad instantánea sobre la salud de los pipelines de datos y el consumo de recursos.",
+      "descripcionCorta": "A high-performance monitoring solution built on Python/Flask, providing instant visibility into data pipeline health and resource consumption.",
+      "desafio": "Falta de visibilidad en tiempo real sobre la salud y el rendimiento de los pipelines de datos en producción.",
+      "solucion": "Dashboard de monitoreo en tiempo real con arquitectura backend robusta para captura y visualización de métricas.",
+      "metricas": {
+        "metricaPrincipal": "Real-time Visibility",
+        "etiqueta": "Pipeline Health Monitoring",
+        "valor": null,
+        "unidad": null
+      },
+      "tecnologias": ["Python", "Flask", "Redis"],
+      "etiquetas": ["Backend Architecture"],
+      "destacado": false,
+      "periodo": "2023—2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "dome-scoop",
+      "categoria": "Web & PWAs",
+      "titulo": "Dome Scoop",
+      "descripcion": "Rediseño y desarrollo de la plataforma transaccional móvil. Implementación de una arquitectura 'App-Shell' que reduce los tiempos de carga en un 60% y permite la instalación directa en el dispositivo sin pasar por App Stores. Service Workers optimizados para funcionamiento offline y sincronización en segundo plano mediante Python FastAPI.",
+      "descripcionCorta": "Plataforma transaccional móvil con arquitectura App-Shell y Service Workers optimizados.",
+      "desafio": "Crear una experiencia de e-commerce móvil que funcione offline y se instale directamente sin App Stores.",
+      "solucion": "Arquitectura App-Shell con Service Workers optimizados y sincronización en segundo plano vía Python FastAPI.",
+      "metricas": {
+        "metricaPrincipal": "60% Reducción en Tiempos de Carga",
+        "etiqueta": "Load Time Reduction",
+        "valor": 60,
+        "unidad": "%"
+      },
+      "tecnologias": ["React", "Python", "FastAPI", "PWA", "Service Workers"],
+      "etiquetas": ["PWA Funcional", "E-commerce", "React"],
+      "destacado": true,
+      "periodo": "2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "ovalo-futuro",
+      "categoria": "Web & PWAs",
+      "titulo": "Ovalo Futuro",
+      "descripcion": "Plataforma educativa diseñada bajo principios de arquitectura limpia. Se priorizó la jerarquía visual para facilitar el aprendizaje asíncrono, integrando módulos de evaluación en tiempo real y dashboards de progreso técnico.",
+      "descripcionCorta": "Plataforma educativa con arquitectura limpia, evaluación en tiempo real y dashboards de progreso.",
+      "desafio": "Diseñar una plataforma LMS que facilite el aprendizaje asíncrono con una jerarquía visual clara y evaluaciones en tiempo real.",
+      "solucion": "Arquitectura limpia con módulos de evaluación integrados y dashboards de progreso técnico para seguimiento del aprendizaje.",
+      "metricas": {
+        "metricaPrincipal": "Arquitectura Limpia",
+        "etiqueta": "Clean Architecture",
+        "valor": null,
+        "unidad": null
+      },
+      "tecnologias": ["Python", "EdTech", "LMS"],
+      "etiquetas": ["EdTech", "LMS", "Python"],
+      "destacado": true,
+      "periodo": "2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "seguridad-y-redes",
+      "categoria": "Infraestructura",
+      "titulo": "Seguridad y Redes",
+      "descripcion": "Especialización en configuración Fortinet y gestión robusta de redes críticas para entornos industriales. Implementación de seguridad perimetral para sectores críticos como minería, asegurando la continuidad del negocio.",
+      "descripcionCorta": "Configuración Fortinet y gestión de redes críticas para entornos industriales.",
+      "desafio": "Garantizar la seguridad perimetral y alta disponibilidad en infraestructura de red para sectores de misión crítica.",
+      "solucion": "Configuración especializada de Fortinet con gestión robusta de redes y protocolos de seguridad para entornos industriales.",
+      "metricas": {
+        "metricaPrincipal": "Alta Disponibilidad",
+        "etiqueta": "High Availability",
+        "valor": 99.9,
+        "unidad": "%"
+      },
+      "tecnologias": ["Fortinet", "Networking", "Firewall", "VPN"],
+      "etiquetas": ["Configuración Fortinet", "Redes Críticas"],
+      "destacado": true,
+      "periodo": "2023—2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "dual-boot-linux-servidores",
+      "categoria": "Infraestructura",
+      "titulo": "Dual-Boot / Linux / Servidores",
+      "descripcion": "Soporte técnico especializado en entornos híbridos. Implementación y mantenimiento de servidores bajo arquitecturas Linux y Windows con enfoque en redundancia. Soporte Nivel 2 y 3 con resolución de incidencias complejas y escalamiento técnico especializado.",
+      "descripcionCorta": "Soporte técnico en entornos híbridos Linux/Windows con enfoque en redundancia y alta disponibilidad.",
+      "desafio": "Mantener entornos híbridos Linux/Windows con alta disponibilidad y escalamiento técnico especializado.",
+      "solucion": "Implementación de servidores con arquitecturas duales, protocolos de recuperación ante desastres y soporte de nivel avanzado.",
+      "metricas": {
+        "metricaPrincipal": "Disponibilidad 99.9%",
+        "etiqueta": "System Uptime",
+        "valor": 99.9,
+        "unidad": "%"
+      },
+      "tecnologias": ["Linux", "Windows Server", "Bash", "PowerShell"],
+      "etiquetas": ["Soporte Técnico Especializado", "Entornos Linux/Windows"],
+      "destacado": false,
+      "periodo": "2023—2024",
+      "enlaceRepositorio": "#"
+    },
+    {
+      "id": "hardware-peripherals",
+      "categoria": "Infraestructura",
+      "titulo": "Hardware & Peripherals",
+      "descripcion": "Diagnóstico y reparación avanzada de equipos de cómputo industriales. Expertise en hardware de misión crítica para entornos mineros e industriales.",
+      "descripcionCorta": "Diagnóstico y reparación avanzada de equipos de cómputo industriales.",
+      "desafio": "Mantener operativos equipos de cómputo en entornos industriales exigentes con mínimo tiempo de inactividad.",
+      "solucion": "Protocolo de diagnóstico avanzado y reparación especializada para hardware industrial de misión crítica.",
+      "metricas": {
+        "metricaPrincipal": "Soporte Nivel 2 & 3",
+        "etiqueta": "Support Level",
+        "valor": null,
+        "unidad": null
+      },
+      "tecnologias": ["Hardware", "Networking", "Industrial Computing"],
+      "etiquetas": ["Hardware", "Industrial"],
+      "destacado": false,
+      "periodo": "2023—2024",
+      "enlaceRepositorio": "#"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "data-engineering",
+      "nombre": "Data Engineering",
+      "icono": "database",
+      "descripcion": "Arquitecturas de datos escalables, ETLs y modelado para decisiones críticas de negocio.",
+      "protocolo": "PRTCL_01 // PIPELINES"
+    },
+    {
+      "id": "web-pwas",
+      "nombre": "Web & PWAs",
+      "icono": "devices",
+      "descripcion": "Aplicaciones progresivas de alto rendimiento con foco en experiencia de usuario y conversión.",
+      "protocolo": "PRTCL_02 // INTERFACE"
+    },
+    {
+      "id": "infraestructura",
+      "nombre": "Infraestructura",
+      "icono": "hub",
+      "descripcion": "Gestión de servidores, CI/CD y monitoreo para garantizar alta disponibilidad y seguridad.",
+      "protocolo": "PRTCL_03 // SYSTEMS"
+    }
+  ],
+  "meta": {
+    "autor": "Jhair Lescano",
+    "marca": "HomeTech",
+    "rol": "System Architect // Full-Stack Developer",
+    "titular": "Ingeniería de Software para Negocios",
+    "subtitulo": "Construyo soluciones integrales desde el dato hasta la experiencia del usuario, con rigor técnico y enfoque de negocio.",
+    "totalProyectos": 42,
+    "uptimeSistema": "99.9%",
+    "periodoGeneral": "2023—2024"
+  }
+}
