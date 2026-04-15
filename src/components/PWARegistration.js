@@ -6,22 +6,33 @@ import { useEffect } from 'react';
  * PWARegistration — Componente para el registro del Service Worker.
  * Solo se ejecuta en el cliente y habilita la funcionalidad PWA.
  */
+/**
+ * PWARegistration — Componente para el registro del Service Worker.
+ * Optimizado para no interferir con la carga inicial (LCP/FCP).
+ */
 const PWARegistration = () => {
   useEffect(() => {
-    if ('serviceWorker' in navigator && window.location.hostname !== 'localhost') {
-      // Registrar el SW solo en producción/entornos reales para evitar problemas de desarrollo
-      // Opcional: habilitar en localhost si se requiere pruebas locales estrictas de PWA
-      navigator.serviceWorker
-        .register('/sw.js')
-        .then((registration) => {
-          // Registro exitoso
-        })
-        .catch((error) => {
-          console.error('Fallo en el registro del Service Worker:', error);
-        });
-    } else if ('serviceWorker' in navigator && window.location.hostname === 'localhost') {
-        // Habilitamos también en localhost para que el usuario pueda validar
-        navigator.serviceWorker.register('/sw.js');
+    if ('serviceWorker' in navigator) {
+      const registerSW = () => {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then(() => {
+            // Registro silencioso y exitoso
+          })
+          .catch((error) => {
+            if (process.env.NODE_ENV === 'development') {
+              console.error('Error al registrar SW:', error);
+            }
+          });
+      };
+
+      // Esperar a que la ventana cargue completamente para no bloquear el hilo principal
+      if (document.readyState === 'complete') {
+        registerSW();
+      } else {
+        window.addEventListener('load', registerSW);
+        return () => window.removeEventListener('load', registerSW);
+      }
     }
   }, []);
 

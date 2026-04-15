@@ -235,7 +235,7 @@ export default function PaginaPrincipal() {
                 JHAIR LESCANO
               </span>
               <p className="font-label text-[10px] uppercase text-secondary dark:text-secondary-fixed-dim tracking-wider">
-                © {new Date().getFullYear()} // ENGINEERED FOR IMPACT
+                {"© " + new Date().getFullYear() + " // ENGINEERED FOR IMPACT"}
               </p>
             </div>
 

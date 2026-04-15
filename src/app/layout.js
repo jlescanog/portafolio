@@ -106,10 +106,12 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Material Symbols para iconos */}
+        {/* Material Symbols para iconos (Carga asíncrona) */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          media="print"
+          onLoad="this.media='all'"
         />
       </head>
       <body className="font-body bg-surface text-on-surface dark:bg-dark-bg dark:text-surface antialiased transition-colors duration-300">
