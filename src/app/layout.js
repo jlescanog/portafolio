@@ -34,6 +34,18 @@ export const metadata = {
   title: "Jhair Lescano | Ingeniería de Software para Negocios | Data Engineer & Full Stack",
   description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
   manifest: "/manifest.json",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: "Jhair Lescano | Ingeniería de Software para Negocios | Data Engineer & Full Stack",
     description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
@@ -48,6 +60,12 @@ export const metadata = {
     ],
     locale: "es_PE",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jhair Lescano | Ingeniería de Software para Negocios",
+    description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura.",
+    images: ["/icon-512x512.png"],
   },
   appleWebApp: {
     capable: true,
@@ -64,6 +82,13 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <head>
+        {/* Optimizaciones de conexión para fuentes externas */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         {/* Script para evitar flash de tema incorrecto (FOUC) */}
         <script
           dangerouslySetInnerHTML={{

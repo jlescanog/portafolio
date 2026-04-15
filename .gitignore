@@ -31,6 +31,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# referencias del proyecto antiguo
+referencias/
+antigravity/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

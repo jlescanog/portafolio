@@ -14,7 +14,7 @@ const PWARegistration = () => {
       navigator.serviceWorker
         .register('/sw.js')
         .then((registration) => {
-          console.log('Service Worker registrado con éxito:', registration.scope);
+          // Registro exitoso
         })
         .catch((error) => {
           console.error('Fallo en el registro del Service Worker:', error);

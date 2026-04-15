@@ -251,7 +251,7 @@ export default function PaginaPrincipal() {
                   GITHUB
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/jhairlescano"
+                  href="https://www.linkedin.com/in/jhair-lescano"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-label text-xs tracking-wider uppercase text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200"
