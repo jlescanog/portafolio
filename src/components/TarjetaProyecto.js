@@ -39,7 +39,6 @@ export default function TarjetaProyecto({ proyecto }) {
         hover:shadow-xl hover:shadow-primary/10 dark:hover:shadow-primary/5
         hover:-translate-y-1
         hover:border-outline-variant/40 dark:hover:border-primary/30
-        ${destacado ? "md:col-span-2" : ""}
       `}
     >
       {/* Contenido principal */}

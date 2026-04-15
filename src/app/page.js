@@ -28,8 +28,8 @@ export default function PaginaPrincipal() {
     filtroActivo === "Todos"
       ? datosPortafolio.proyectos
       : datosPortafolio.proyectos.filter(
-          (proyecto) => proyecto.categoria === filtroActivo
-        );
+        (proyecto) => proyecto.categoria === filtroActivo
+      );
 
   return (
     <>
@@ -87,7 +87,7 @@ export default function PaginaPrincipal() {
                   <Image
                     alt="Jhair Lescano — Software Engineer"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYr0TR_0gJFMQPONuJzxD6YyHp5UzYymBMnQJ1YkPbkOlH6EePMjW_0SsOLLtM1hqgxo2J4CcUBl0tKATK1yg-lJfj_K2j4nc7a-HZ1jXNHeYCXIZszujvxl2x4D8mDmvpVCjbk_oCtnUacF2JVUt9lFbhjJ5vNGuzitrgM2Y1KD5WiJptDSSVEf41udvv53-T4fOd4pzhjbKQwptKop2BWsZS1J0cOr8HlpOE8rkvprI4ViACyZ91Wj85eiI-5gG-pA07ErcpL7I"
+                    src="/perfil.webp"
                     width={500}
                     height={625}
                     priority
@@ -228,25 +228,47 @@ export default function PaginaPrincipal() {
           id="contacto"
           className="bg-surface-container dark:bg-dark-bg w-full py-10 md:py-12 px-6 md:px-8 border-t border-outline-variant/10 dark:border-white/5 transition-colors duration-300"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-screen-2xl mx-auto">
-            <div className="flex flex-col items-center md:items-start">
-              <span className="font-label font-bold text-on-surface dark:text-surface text-lg md:text-xl tracking-widest uppercase mb-2">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+            {/* Logo o Marca */}
+            <div className="flex flex-col items-center md:items-start gap-1">
+              <span className="font-label font-bold text-on-surface dark:text-surface text-lg tracking-widest uppercase">
                 JHAIR LESCANO
               </span>
-              <p className="font-label text-[10px] md:text-xs tracking-wider uppercase text-secondary dark:text-secondary-fixed-dim">
-                © 2024 JHAIR LESCANO // ENGINEERED FOR IMPACT
+              <p className="font-label text-[10px] uppercase text-secondary dark:text-secondary-fixed-dim tracking-wider">
+                © {new Date().getFullYear()} // ENGINEERED FOR IMPACT
               </p>
             </div>
-            <div className="flex gap-6 md:gap-8">
-              {["GITHUB", "LINKEDIN", "READ.CV", "EMAIL"].map((enlace) => (
+
+            {/* Enlaces y Acción Principal */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-10">
+              <div className="flex gap-6">
                 <a
-                  key={enlace}
-                  href="#"
-                  className="font-label text-[10px] md:text-xs tracking-wider uppercase text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-1 underline-offset-4 transition-all duration-200 hover:translate-x-0.5"
+                  href="https://github.com/jlescanog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-label text-xs tracking-wider uppercase text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200"
                 >
-                  {enlace}
+                  GITHUB
                 </a>
-              ))}
+                <a
+                  href="https://www.linkedin.com/in/jhairlescano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-label text-xs tracking-wider uppercase text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200"
+                >
+                  LINKEDIN
+                </a>
+              </div>
+
+              <a
+                href={`https://wa.me/51933243356?text=${encodeURIComponent("Hola Jhair, me gustaría agendar una consultoría de software.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-on-surface dark:bg-surface text-surface dark:text-on-surface px-6 py-3 font-label font-bold text-xs tracking-widest hover:bg-primary dark:hover:bg-primary hover:text-white transition-colors duration-200"
+              >
+                <span className="material-symbols-outlined text-base">calendar_month</span>
+                AGENDAR CONSULTORÍA
+              </a>
             </div>
           </div>
         </footer>

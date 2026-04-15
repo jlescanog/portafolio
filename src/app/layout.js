@@ -31,19 +31,19 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Jhair Lescano | Ingeniería de Software para Negocios",
+  title: "Jhair Lescano | Ingeniería de Software para Negocios | Data Engineer & Full Stack",
   description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
   manifest: "/manifest.json",
   openGraph: {
-    title: "Jhair Lescano | Ingeniería de Software para Negocios",
+    title: "Jhair Lescano | Ingeniería de Software para Negocios | Data Engineer & Full Stack",
     description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
     siteName: "HomeTech Engineering",
     images: [
       {
-        url: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYr0TR_0gJFMQPONuJzxD6YyHp5UzYymBMnQJ1YkPbkOlH6EePMjW_0SsOLLtM1hqgxo2J4CcUBl0tKATK1yg-lJfj_K2j4nc7a-HZ1jXNHeYCXIZszujvxl2x4D8mDmvpVCjbk_oCtnUacF2JVUt9lFbhjJ5vNGuzitrgM2Y1KD5WiJptDSSVEf41udvv53-T4fOd4pzhjbKQwptKop2BWsZS1J0cOr8HlpOE8rkvprI4ViACyZ91Wj85eiI-5gG-pA07ErcpL7I", // Foto de perfil usada en el App
-        width: 500,
-        height: 625,
-        alt: "Jhair Lescano - Software Engineer HomeTech",
+        url: "/icon-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Logo HomeTech - Jhair Lescano",
       },
     ],
     locale: "es_PE",
