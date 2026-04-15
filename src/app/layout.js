@@ -23,12 +23,17 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#B6171E",
+};
+
 export const metadata = {
   title: "Jhair Lescano | Ingeniería de Software para Negocios",
   description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
   manifest: "/manifest.json",
-  themeColor: "#B6171E",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   openGraph: {
     title: "Jhair Lescano | Ingeniería de Software para Negocios",
     description: "Especialista en Data Engineering, Desarrollo Web PWA e Infraestructura. Soluciones escalables desde Tacna para el mundo.",
