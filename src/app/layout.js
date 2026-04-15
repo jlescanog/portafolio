@@ -1,6 +1,7 @@
 import { Inter, Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import PWARegistration from "@/components/PWARegistration";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Tipografías configuradas según guidelines.md
 const inter = Inter({
@@ -110,6 +111,8 @@ export default function RootLayout({ children }) {
       <body className="font-body bg-surface text-on-surface dark:bg-dark-bg dark:text-surface antialiased transition-colors duration-300">
         <PWARegistration />
         {children}
+        {/* Monitoreo de rendimiento y métricas Core Web Vitals en tiempo real */}
+        <SpeedInsights />
       </body>
     </html>
   );
