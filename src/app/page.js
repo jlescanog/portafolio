@@ -14,6 +14,7 @@ import datosPortafolio from "@/config/proyectos.json";
 
 // Configuración de filtros con iconos
 const FILTROS = [
+  { clave: "Destacados", etiqueta: "Destacados", icono: "star" },
   { clave: "Todos", etiqueta: "Todos", icono: "apps" },
   { clave: "Data Engineering", etiqueta: "Data", icono: "database" },
   { clave: "Web & PWAs", etiqueta: "Web & PWAs", icono: "devices" },
@@ -21,15 +22,17 @@ const FILTROS = [
 ];
 
 export default function PaginaPrincipal() {
-  const [filtroActivo, setFiltroActivo] = useState("Todos");
+  const [filtroActivo, setFiltroActivo] = useState("Destacados");
 
   // Filtrar proyectos según la categoría seleccionada
   const proyectosFiltrados =
     filtroActivo === "Todos"
       ? datosPortafolio.proyectos
+      : filtroActivo === "Destacados"
+      ? datosPortafolio.proyectos.filter((proyecto) => proyecto.destacado)
       : datosPortafolio.proyectos.filter(
-        (proyecto) => proyecto.categoria === filtroActivo
-      );
+          (proyecto) => proyecto.categoria === filtroActivo
+        );
 
   return (
     <>

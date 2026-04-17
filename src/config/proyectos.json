@@ -3,22 +3,63 @@
     {
       "id": "enterprise-db-optimization",
       "categoria": "Data Engineering",
-      "titulo": "Optimización de Base de Datos Empresarial",
-      "descripcion": "Arquitectura de sistemas de alta disponibilidad con tunning especializado de SQL Server para escalabilidad logística. Migración a Oracle Cloud Infrastructure (OCI) con optimización quirúrgica de queries.",
-      "descripcionCorta": "Sistemas de alta disponibilidad con tunning de SQL Server para escalabilidad en el sector logístico.",
-      "desafio": "Arquitectura legacy generando latencia en operaciones logísticas de misión crítica durante horas pico.",
-      "solucion": "Migración a Oracle Cloud Infrastructure (OCI) con optimización quirúrgica de queries en SQL Server.",
+      "titulo": "Reingeniería y Optimización de Base de Datos Crítica",
+      "descripcion": "Transformación integral de una infraestructura legacy de procesamiento masivo. Implementé desde el despliegue de Windows Server y SQL Server hasta técnicas avanzadas de particionamiento y tuning quirúrgico para la gestión de millones de registros horarios.",
+      "descripcionCorta": "Reducción de latencia de consultas masivas de 20 minutos a menos de 4 segundos en entornos de misión crítica.",
+      "desafio": "Consultas de ventas históricas con tiempos de espera de 20 min debido a la saturación por ingesta masiva (millones de filas/hora) y falta de optimización estructural.",
+      "solucion": "Despliegue de nueva arquitectura en Windows Server/SQL Server, migración de datos con integridad total y aplicación de funciones de particionamiento y mantenimiento inteligente de índices.",
       "metricas": {
-        "metricaPrincipal": "40% más rápido en procesamiento",
-        "etiqueta": "Ganancia en Rendimiento",
-        "valor": 40,
+        "metricaPrincipal": "99.6% de reducción en tiempo de respuesta",
+        "etiqueta": "Optimización de Consulta",
+        "valor": 99,
         "unidad": "%"
       },
-      "tecnologias": ["Oracle", "SQL Server", "OCI", "Python"],
-      "etiquetas": ["ENTERPRISE", "OCI MIGRATION"],
+      "tecnologias": [
+        "SQL Server",
+        "Windows Server",
+        "T-SQL",
+        "Performance Tuning"
+      ],
+      "etiquetas": [
+        "BIG DATA",
+        "INFRASTRUCTURE",
+        "OPTIMIZATION"
+      ],
       "destacado": true,
-      "periodo": "2023—2024",
+      "periodo": "2023—Presente",
       "enlaceRepositorio": "#"
+    },
+    {
+      "id": "telco-data-pipeline",
+      "categoria": "data-engineering",
+      "titulo": "Arquitectura de Medallón para Monitoreo Near Real-Time",
+      "descripcion": "Implementación de un ecosistema de datos de extremo a extremo bajo arquitectura de Medallón (Bronze, Silver, Gold). Diseñé el flujo completo para una TELCO, desde la ingesta de logs crudos (SOAP) hasta la entrega de insights analíticos en Power BI.",
+      "descripcionCorta": "Arquitectura de Medallón optimizada para reducir la latencia de datos de 30 min a 4 min en entornos críticos.",
+      "arquitectura": "Medallón (Bronze, Silver, Gold)",
+      "desafio": "Disponibilidad lenta de métricas operativas (30 min de retraso) debido a cuellos de botella en el procesamiento de logs SOAP masivos.",
+      "solucion": "Orquestación con Bash/CRON para ingesta (Bronze), limpieza y tuning en SQL Server/Oracle (Silver) y modelado dimensional para visualización (Gold).",
+      "metricas": {
+        "metricaPrincipal": "Optimización de Latencia: 4 min de disponibilidad",
+        "etiqueta": "Cierre de Hora",
+        "valor": 86,
+        "unidad": "%"
+      },
+      "tecnologias": [
+        "Bash Scripting",
+        "SQL Server Enterprise",
+        "Oracle",
+        "Power BI",
+        "CRON"
+      ],
+      "etiquetas": [
+        "DATA OPS",
+        "MEDALLION ARCHITECTURE",
+        "ETL/ELT",
+        "NEAR REAL-TIME"
+      ],
+      "destacado": true,
+      "periodo": "2024—Presente",
+      "detalles_tecnicos": "Desarrollo de 17 vistas analíticas con monitoreo de observabilidad mediante logs de auditoría internos para detectar cuellos de botella en tiempo real."
     },
     {
       "id": "pipeline-oracle-cloud",
@@ -34,8 +75,18 @@
         "valor": 50,
         "unidad": "%"
       },
-      "tecnologias": ["OCI", "ETL", "Oracle", "Data Integration", "Functions"],
-      "etiquetas": ["OCI", "ETL", "ORACLE"],
+      "tecnologias": [
+        "OCI",
+        "ETL",
+        "Oracle",
+        "Data Integration",
+        "Functions"
+      ],
+      "etiquetas": [
+        "OCI",
+        "ETL",
+        "ORACLE"
+      ],
       "destacado": true,
       "periodo": "2023—2024",
       "enlaceRepositorio": "#"
@@ -43,22 +94,35 @@
     {
       "id": "realtime-monitoring-dashboard",
       "categoria": "Data Engineering",
-      "titulo": "Dashboard de Monitoreo en Tiempo Real",
-      "descripcion": "Solución de monitoreo de alto rendimiento construida con Python/Flask, proporcionando visibilidad instantánea sobre la salud de los pipelines de datos y el consumo de recursos.",
-      "descripcionCorta": "Monitoreo de alto rendimiento con Python/Flask para visibilidad en tiempo real de Data Pipelines.",
-      "desafio": "Falta de visibilidad en tiempo real sobre la salud y el rendimiento de los pipelines de datos en producción.",
-      "solucion": "Dashboard de monitoreo en tiempo real con arquitectura Backend robusta para captura y visualización de métricas.",
+      "titulo": "Plataforma Centralizada de Monitoreo y Observabilidad en Vivo",
+      "descripcion": "Desarrollo de una solución integral para la automatización de la observabilidad de servicios críticos (365/24). Transformé procesos manuales de monitoreo vía SSH/Bash en una interfaz web centralizada que ejecuta diagnósticos en tiempo real y gestiona la salud de servidores de producción.",
+      "descripcionCorta": "Sistema de monitoreo centralizado con actualización cada 10s, reduciendo el tiempo de respuesta ante incidencias y eliminando el logeo manual.",
+      "arquitectura": "Full-Stack (Python/Flask) con Integración de Sistemas Unix",
+      "desafio": "Monitoreo ineficiente basado en accesos manuales individuales por terminal (Putty/SSH) y ejecución fragmentada de scripts, retrasando la detección de caídas en servicios de ventas y cobros.",
+      "solucion": "Implementación de un backend en Python/Flask que orquesta scripts de diagnóstico remoto vía llaves SSH (RSA), con sistema de caché en servidor para visualización instantánea y frontend dinámico con actualizaciones cada 10 segundos.",
       "metricas": {
-        "metricaPrincipal": "Visibilidad en Tiempo Real",
-        "etiqueta": "Monitoreo de Pipelines",
-        "valor": null,
-        "unidad": null
+        "metricaPrincipal": "Eliminación del 100% de accesos manuales por terminal",
+        "etiqueta": "Eficiencia Operativa",
+        "valor": 100,
+        "unidad": "%"
       },
-      "tecnologias": ["Python", "Flask", "Redis"],
-      "etiquetas": ["Backend Architecture"],
-      "destacado": false,
-      "periodo": "2023—2024",
-      "enlaceRepositorio": "#"
+      "tecnologias": [
+        "Python",
+        "Flask",
+        "Bash Scripting",
+        "SSH Key Auth",
+        "JavaScript",
+        "Linux Security"
+      ],
+      "etiquetas": [
+        "OBSERVABILITY",
+        "DEVOPS",
+        "AUTOMATION",
+        "REAL-TIME"
+      ],
+      "destacado": true,
+      "periodo": "2024—Presente",
+      "detalles_tecnicos": "Arquitectura de seguridad basada en claves públicas/privadas para ejecución remota segura, optimización de scripts legacy para detección visual rápida de errores y gestión de caché para renderizado de alta velocidad (Low Latency UI)."
     },
     {
       "id": "dome-scoop",
@@ -74,8 +138,18 @@
         "valor": 60,
         "unidad": "%"
       },
-      "tecnologias": ["React", "Python", "FastAPI", "PWA", "Service Workers"],
-      "etiquetas": ["PWA Funcional", "E-commerce", "React"],
+      "tecnologias": [
+        "React",
+        "Python",
+        "FastAPI",
+        "PWA",
+        "Service Workers"
+      ],
+      "etiquetas": [
+        "PWA Funcional",
+        "E-commerce",
+        "React"
+      ],
       "destacado": true,
       "periodo": "2024",
       "enlaceRepositorio": "#"
@@ -94,8 +168,16 @@
         "valor": null,
         "unidad": null
       },
-      "tecnologias": ["Python", "EdTech", "LMS"],
-      "etiquetas": ["EdTech", "LMS", "Python"],
+      "tecnologias": [
+        "Python",
+        "EdTech",
+        "LMS"
+      ],
+      "etiquetas": [
+        "EdTech",
+        "LMS",
+        "Python"
+      ],
       "destacado": true,
       "periodo": "2024",
       "enlaceRepositorio": "#"
@@ -114,8 +196,16 @@
         "valor": 99.9,
         "unidad": "%"
       },
-      "tecnologias": ["Fortinet", "Networking", "Firewall", "VPN"],
-      "etiquetas": ["Configuración Fortinet", "Redes Críticas"],
+      "tecnologias": [
+        "Fortinet",
+        "Networking",
+        "Firewall",
+        "VPN"
+      ],
+      "etiquetas": [
+        "Configuración Fortinet",
+        "Redes Críticas"
+      ],
       "destacado": true,
       "periodo": "2023—2024",
       "enlaceRepositorio": "#"
@@ -134,8 +224,16 @@
         "valor": 99.9,
         "unidad": "%"
       },
-      "tecnologias": ["Linux", "Windows Server", "Bash", "PowerShell"],
-      "etiquetas": ["Soporte Técnico Especializado", "Entornos Linux/Windows"],
+      "tecnologias": [
+        "Linux",
+        "Windows Server",
+        "Bash",
+        "PowerShell"
+      ],
+      "etiquetas": [
+        "Soporte Técnico Especializado",
+        "Entornos Linux/Windows"
+      ],
       "destacado": false,
       "periodo": "2023—2024",
       "enlaceRepositorio": "#"
@@ -154,8 +252,15 @@
         "valor": null,
         "unidad": null
       },
-      "tecnologias": ["Hardware", "Networking", "Industrial Computing"],
-      "etiquetas": ["Hardware", "Industrial"],
+      "tecnologias": [
+        "Hardware",
+        "Networking",
+        "Industrial Computing"
+      ],
+      "etiquetas": [
+        "Hardware",
+        "Industrial"
+      ],
       "destacado": false,
       "periodo": "2023—2024",
       "enlaceRepositorio": "#"
